@@ -1,0 +1,13 @@
+# Baseline: raw features, no class balancing
+experiment_name: churnbench-raw
+tracking_uri: sqlite:///mlflow.db
+data_path: data/telco_churn.csv
+
+seeds: [7, 42, 2024]
+test_size: 0.2
+engineer_features: false
+balance_classes: false
+
+models: [logreg, random_forest, hist_gb]
+register_best: false
+registered_model_name: churnbench-best

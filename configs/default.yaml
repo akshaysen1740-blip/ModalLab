@@ -1,0 +1,13 @@
+# Engineered features, 3 seeds, class-imbalance handling ON
+experiment_name: churnbench-engineered
+tracking_uri: sqlite:///mlflow.db
+data_path: data/telco_churn.csv
+
+seeds: [7, 42, 2024]
+test_size: 0.2
+engineer_features: true
+balance_classes: true
+
+models: [logreg, random_forest, hist_gb]
+register_best: true
+registered_model_name: churnbench-best
