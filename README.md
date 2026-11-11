@@ -1,4 +1,4 @@
-# ChurnBench
+# ModalLab
 
 A small, config-driven lab for comparing churn models **reproducibly**. It trains a few
 scikit-learn models over several random seeds, reports how stable each one is, finds a
